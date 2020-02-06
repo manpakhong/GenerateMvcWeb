@@ -1,0 +1,52 @@
+# params
+server.name=billing_engine_1
+default.created.by=cms_appz
+default.updated.by=cms_appz
+print.dbconnectionstacktrace=true
+# quartz
+scheduler.yesterday.bed.charge.cron.schedule=0 0 1 * * ? *
+# thread - bilonrequest
+thread.consumer.bilonrequest.max.thread.pool=1
+thread.consumer.bilonrequest.thread.sleep=1000
+thread.provider.bilonrequest.max.thread.pool=1
+thread.provider.bilonrequest.thread.sleep=2000
+thread.bilonrequest.block.queue.size=100
+service.bilonrequest.no.of.records.fetch.each.time=10
+# thread - yesterdayBedCharge
+thread.consumer.yesterday.bed.charge.max.thread.pool=1
+thread.consumer.yesterday.bed.charge.thread.sleep=1000
+thread.provider.yesterday.bed.charge.max.thread.pool=1
+thread.provider.yesterday.bed.charge.thread.sleep=2000
+thread.yesterday.bed.charge.block.queue.size=100
+service.yesterday.bed.charge.no.of.records.fetch.each.time=10
+# thread - serverInfo
+thread.consumer.serverinfo.max.thread.pool=1
+thread.consumer.serverinfo.thread.sleep=1000
+thread.provider.serverinfo.max.thread.pool=1
+thread.provider.serverinfo.thread.sleep=2000
+thread.serverinfo.block.queue.size=100
+service.serverinfo.no.of.records.fetch.each.time=10
+# socket server
+socket.server.port=3000
+socket.server.enabled=true
+socket.memberserver.port=3000
+socket.memberserver.servername=localhost
+# data grid server
+data.grid.server.enabled=true
+data.grid.server.port=2000
+data.grid.memberserver=localhost
+data.grid.memberserver.port=1020
+data.grid.master.yesterday.bedcharge.provider=billing_engine_1
+data.grid.master.billonrequest.provider=billing_engine_1
+data.grid.server.time.yesterday.bedcharge.determine.inactive=5000
+data.grid.server.time.billonrequest.determine.inactive=5000
+data.grid.server.bilpatientcharge.job.keyname=BIL_PATIENT_CHARGE_JOB_LIST
+data.grid.server.yesterday.bedcharge.job.keyname=YESTERDAY_BEDCHARGE_JOB_LIST
+data.grid.server.memberserver.lastactivity.date.keyname=LAST_ACTIVITY_DATE
+date.grid.server.billing.engine.server1.preference=SERVER1_PREFERENCE
+date.grid.server.billing.engine.server2.preference=SERVER2_PREFERENCE
+data.grid.server.yesterday.current.master.provider.keyname=YESTERDAY_CURRENT_MASTER_PROVIDER
+data.grid.server.billonrequest.current.master.provider.keyname=BILLONREQUEST_CURRENT_MASTER_PROVIDER
+# yesterdayBedChargeJob Queue
+data.grid.server.yesterday.bedcharge.job.queue.enable=true
+yesterday.bedcharge.job.queue.enable=true

@@ -1,0 +1,79 @@
+2019-09-17 13:47:10,904 WARN  (ServerService Thread Pool -- 149) deprecation:91 [resolveEntity] - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-09-17 14:59:01,501 WARN  (ServerService Thread Pool -- 147) deprecation:91 [resolveEntity] - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-09-17 14:59:28,963 WARN  (Thread-198) AddressPicker:-1 [?] - [LOCAL] [dev] [3.12.2] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2019-09-17 14:59:28,965 WARN  (Thread-198) AddressPicker:-1 [?] - [LOCAL] [dev] [3.12.2] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2019-09-17 14:59:31,603 WARN  (hz.billing_engine_3.priority-generic-operation.thread-0) ClusterJoinManager:-1 [?] - [oaitd1374.hkbh.org.hk]:7090 [dev] [3.12.2] Could not create connection to possible master [cmsdevbil01.hkbh.org.hk]:7090
+2019-09-17 14:59:37,668 WARN  (hz.billing_engine_3.generic-operation.thread-0) InternalPartitionService:-1 [?] - [oaitd1374.hkbh.org.hk]:7090 [dev] [3.12.2] Ignoring received partition table, startup is not completed yet. Sender: [cmsdevbil01.hkbh.org.hk]:7090
+2019-09-17 15:00:10,791 WARN  (ServerService Thread Pool -- 147) AutowiredAnnotationBeanPostProcessor:456 [lambda$buildAutowiringMetadata$2] - Autowired annotation should only be used on methods with parameters: private java.lang.String hk.org.hkbh.cms.billingengine.web.service.BilApiMgr.getClassName()
+2019-09-17 15:00:10,796 WARN  (ServerService Thread Pool -- 147) AutowiredAnnotationBeanPostProcessor:456 [lambda$buildAutowiringMetadata$2] - Autowired annotation should only be used on methods with parameters: private java.lang.String hk.org.hkbh.cms.billingengine.web.service.BilWebServerMgr.getClassName()
+2019-09-17 15:00:10,849 WARN  (ServerService Thread Pool -- 147) deprecation:91 [resolveEntity] - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-09-17 16:02:27,535 WARN  (pool-10-thread-1) BilOnRequestJobsConsumerThreadImpl:64 [changeStatus2Processing] - hk.org.hkbh.cms.billingengine.patientcharges.thread.consumer.BilOnRequestJobsConsumerThreadImpl.changeStatus2Processing() - job=Job [jobStatus=3, jobStartWaitingTime=null, jobEndWaitingTime=Tue Sep 17 16:02:27 CST 2019, jobStartTime=Tue Sep 17 16:02:27 CST 2019, jobEndTime=null, bilChargeRequestEo=BilChargeRequestEo [bilchgreqRowid=null, requestRowid=null, createdDateTime=Tue Sep 17 16:02:27 CST 2019, updatedDateTime=Tue Sep 17 16:02:27 CST 2019, status=3, requestType=null, requestWorkflow=REQUEST_WORKFLOW_KEEP_ALIVE, requestParameters=null, handledByServer=billing_engine_3, startWaitingDateTime=null, endWaitingDateTime=Tue Sep 17 16:02:27 CST 2019, startProcessDateTime=Tue Sep 17 16:02:27 CST 2019, endProcessDateTime=null, episodeId=null, jobQueue=null, orderId=null, providedByServer=billing_engine_3, route=null, remarks=null]]
+2019-09-17 16:02:27,709 WARN  (pool-10-thread-1) BilOnRequestJobsConsumerThreadImpl:72 [changeStatus2Finished] - hk.org.hkbh.cms.billingengine.patientcharges.thread.consumer.BilOnRequestJobsConsumerThreadImpl.changeStatus2Finished() - noOfRecordUpdatedEnd == 0?!, job=Job [jobStatus=1, jobStartWaitingTime=null, jobEndWaitingTime=Tue Sep 17 16:02:27 CST 2019, jobStartTime=Tue Sep 17 16:02:27 CST 2019, jobEndTime=Tue Sep 17 16:02:27 CST 2019, bilChargeRequestEo=BilChargeRequestEo [bilchgreqRowid=null, requestRowid=null, createdDateTime=Tue Sep 17 16:02:27 CST 2019, updatedDateTime=Tue Sep 17 16:02:27 CST 2019, status=1, requestType=null, requestWorkflow=REQUEST_WORKFLOW_KEEP_ALIVE, requestParameters=null, handledByServer=billing_engine_3, startWaitingDateTime=null, endWaitingDateTime=Tue Sep 17 16:02:27 CST 2019, startProcessDateTime=Tue Sep 17 16:02:27 CST 2019, endProcessDateTime=Tue Sep 17 16:02:27 CST 2019, episodeId=null, jobQueue=null, orderId=null, providedByServer=billing_engine_3, route=connections=0, remarks=null]]
+2019-09-17 16:26:30,866 WARN  (hz.ShutdownThread) Node:-1 [?] - [oaitd1374.hkbh.org.hk]:7090 [dev] [3.12.2] Terminating forcefully...
+2019-09-17 16:26:31,290 ERROR (Thread-189) DataGridMgr:50 [init] - hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.init() - 
+com.hazelcast.core.HazelcastInstanceNotActiveException: Hazelcast instance is not active!
+	at com.hazelcast.instance.HazelcastInstanceProxy.getOriginal(HazelcastInstanceProxy.java:321)
+	at com.hazelcast.instance.HazelcastInstanceProxy.getMap(HazelcastInstanceProxy.java:99)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.init(DataGridDao.java:43)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.<init>(DataGridDao.java:38)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.init(DataGridMgr.java:48)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.<init>(DataGridMgr.java:35)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsThirdProviderThreadImpl.init(BilOnRequestJobsThirdProviderThreadImpl.java:51)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsThirdProviderThreadImpl.<init>(BilOnRequestJobsThirdProviderThreadImpl.java:42)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.BilOnRequestJobsThirdProviderExecutorImpl.run(BilOnRequestJobsThirdProviderExecutorImpl.java:113)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-17 16:26:31,306 ERROR (Thread-189) DataGridMgr:37 [<init>] - hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.DataGridMgr()
+com.hazelcast.core.HazelcastInstanceNotActiveException: Hazelcast instance is not active!
+	at com.hazelcast.instance.HazelcastInstanceProxy.getOriginal(HazelcastInstanceProxy.java:321)
+	at com.hazelcast.instance.HazelcastInstanceProxy.getMap(HazelcastInstanceProxy.java:99)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.init(DataGridDao.java:43)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.<init>(DataGridDao.java:38)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.init(DataGridMgr.java:48)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.<init>(DataGridMgr.java:35)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsThirdProviderThreadImpl.init(BilOnRequestJobsThirdProviderThreadImpl.java:51)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsThirdProviderThreadImpl.<init>(BilOnRequestJobsThirdProviderThreadImpl.java:42)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.BilOnRequestJobsThirdProviderExecutorImpl.run(BilOnRequestJobsThirdProviderExecutorImpl.java:113)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-17 16:26:31,312 ERROR (Thread-189) BilOnRequestJobsThirdProviderExecutorImpl:129 [run] - hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.BilOnRequestJobsThirdProviderExecutorImpl.run() 
+com.hazelcast.core.HazelcastInstanceNotActiveException: Hazelcast instance is not active!
+	at com.hazelcast.instance.HazelcastInstanceProxy.getOriginal(HazelcastInstanceProxy.java:321)
+	at com.hazelcast.instance.HazelcastInstanceProxy.getMap(HazelcastInstanceProxy.java:99)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.init(DataGridDao.java:43)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.<init>(DataGridDao.java:38)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.init(DataGridMgr.java:48)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.<init>(DataGridMgr.java:35)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsThirdProviderThreadImpl.init(BilOnRequestJobsThirdProviderThreadImpl.java:51)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsThirdProviderThreadImpl.<init>(BilOnRequestJobsThirdProviderThreadImpl.java:42)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.BilOnRequestJobsThirdProviderExecutorImpl.run(BilOnRequestJobsThirdProviderExecutorImpl.java:113)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-17 16:26:31,476 ERROR (Thread-195) ServerInfoJobsProviderExecutorImpl:130 [run] - hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.ServerInfoJobsProviderExecutorImpl.run() 
+com.hazelcast.core.HazelcastInstanceNotActiveException: Hazelcast instance is not active!
+	at com.hazelcast.instance.HazelcastInstanceProxy.getOriginal(HazelcastInstanceProxy.java:321)
+	at com.hazelcast.instance.HazelcastInstanceProxy.getMap(HazelcastInstanceProxy.java:99)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.init(DataGridDao.java:43)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.<init>(DataGridDao.java:38)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.init(DataGridMgr.java:48)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.<init>(DataGridMgr.java:35)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.ServerInfoJobsProviderThreadImpl.init(ServerInfoJobsProviderThreadImpl.java:37)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.ServerInfoJobsProviderThreadImpl.<init>(ServerInfoJobsProviderThreadImpl.java:30)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.ServerInfoJobsProviderExecutorImpl.run(ServerInfoJobsProviderExecutorImpl.java:114)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-17 16:26:31,490 ERROR (Thread-187) BilOnRequestJobsSecondProviderExecutorImpl:130 [run] - hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.BilOnRequestJobsSecondProviderExecutorImpl.run() 
+com.hazelcast.core.HazelcastInstanceNotActiveException: Hazelcast instance is not active!
+	at com.hazelcast.instance.HazelcastInstanceProxy.getOriginal(HazelcastInstanceProxy.java:321)
+	at com.hazelcast.instance.HazelcastInstanceProxy.getMap(HazelcastInstanceProxy.java:99)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.init(DataGridDao.java:43)
+	at hk.org.hkbh.cms.billingengine.patientcharges.dao.DataGridDao.<init>(DataGridDao.java:38)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.init(DataGridMgr.java:48)
+	at hk.org.hkbh.cms.billingengine.patientcharges.service.DataGridMgr.<init>(DataGridMgr.java:35)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsSecondProviderThreadImpl.init(BilOnRequestJobsSecondProviderThreadImpl.java:52)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.provider.BilOnRequestJobsSecondProviderThreadImpl.<init>(BilOnRequestJobsSecondProviderThreadImpl.java:43)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.executor.BilOnRequestJobsSecondProviderExecutorImpl.run(BilOnRequestJobsSecondProviderExecutorImpl.java:114)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-17 17:10:46,679 WARN  (ServerService Thread Pool -- 100) deprecation:91 [resolveEntity] - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-09-17 17:11:16,450 WARN  (ServerService Thread Pool -- 67) deprecation:91 [resolveEntity] - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-09-17 17:11:40,593 WARN  (Thread-135) AddressPicker:-1 [?] - [LOCAL] [dev] [3.12.2] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2019-09-17 17:11:40,595 WARN  (Thread-135) AddressPicker:-1 [?] - [LOCAL] [dev] [3.12.2] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2019-09-17 17:12:28,255 WARN  (ServerService Thread Pool -- 67) AutowiredAnnotationBeanPostProcessor:456 [lambda$buildAutowiringMetadata$2] - Autowired annotation should only be used on methods with parameters: private java.lang.String hk.org.hkbh.cms.billingengine.web.service.BilApiMgr.getClassName()
+2019-09-17 17:12:28,273 WARN  (ServerService Thread Pool -- 67) AutowiredAnnotationBeanPostProcessor:456 [lambda$buildAutowiringMetadata$2] - Autowired annotation should only be used on methods with parameters: private java.lang.String hk.org.hkbh.cms.billingengine.web.service.BilWebServerMgr.getClassName()
+2019-09-17 17:12:28,353 WARN  (ServerService Thread Pool -- 67) deprecation:91 [resolveEntity] - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.

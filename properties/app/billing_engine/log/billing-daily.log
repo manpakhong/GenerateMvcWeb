@@ -1,0 +1,797 @@
+2020-02-04 15:56:15,177 ERROR (ServerService Thread Pool -- 85) PatientChargesBundlesBuilder:454 [build] - hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build() - this.fileName=/app/billing_engine/patient-charges.properties
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build(PatientChargesBundlesBuilder.java:417)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build(PatientChargesBundlesBuilder.java:7)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.PropertiesFactory.getInstanceOfPatientChargesProperties(PropertiesFactory.java:92)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.init(Initializer.java:41)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.<init>(Initializer.java:35)
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.start(InitializerImpl.java:33)
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.init(InitializerImpl.java:22)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:300)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:140)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:584)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:555)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:597)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2020-02-04 15:56:15,210 ERROR (ServerService Thread Pool -- 85) PropertiesFactory:96 [getInstanceOfPatientChargesProperties] - hk.org.hkbh.cms.billingengine.patientcharges.factory.PropertiesFactory.getInstanceOfPatientChargesProperties() - 
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build(PatientChargesBundlesBuilder.java:417)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build(PatientChargesBundlesBuilder.java:7)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.PropertiesFactory.getInstanceOfPatientChargesProperties(PropertiesFactory.java:92)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.init(Initializer.java:41)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.<init>(Initializer.java:35)
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.start(InitializerImpl.java:33)
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.init(InitializerImpl.java:22)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:300)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:140)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:584)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:555)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:597)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2020-02-04 15:56:15,224 ERROR (ServerService Thread Pool -- 85) Initializer:77 [init] - hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.init()
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build(PatientChargesBundlesBuilder.java:417)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.builder.PatientChargesBundlesBuilder.build(PatientChargesBundlesBuilder.java:7)
+	at hk.org.hkbh.cms.billingengine.patientcharges.factory.PropertiesFactory.getInstanceOfPatientChargesProperties(PropertiesFactory.java:92)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.init(Initializer.java:41)
+	at hk.org.hkbh.cms.billingengine.patientcharges.thread.run.Initializer.<init>(Initializer.java:35)
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.start(InitializerImpl.java:33)
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.init(InitializerImpl.java:22)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:300)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:140)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:584)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:555)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:597)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2020-02-04 15:56:15,243 ERROR (ServerService Thread Pool -- 85) fail:1998 [failed] - MSC000001: Failed to start service jboss.undertow.deployment.default-server.default-host."/billing-engine-web-0.0.1"
+org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host."/billing-engine-web-0.0.1": java.lang.NullPointerException
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.NullPointerException
+	at hk.org.hkbh.cms.billingengine.web.system.impl.InitializerImpl.init(InitializerImpl.java:24)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:300)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:140)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:584)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:555)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:597)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	... 8 more
+2020-02-04 15:56:15,270 ERROR (External Management Request Threads -- 1) management-operation:1002 [executeStep] - WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "billing-engine-web-0.0.1.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.deployment.default-server.default-host.\"/billing-engine-web-0.0.1\"" => "java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException"},
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.deployment.unit.\"billing-engine-web-0.0.1.war\".deploymentCompleteService"],
+        "Services that may be the cause:" => [
+            "jboss.clustering.web.route.default-server",
+            "jboss.iiop-openjdk.poa-service.rootpoa",
+            "jboss.txn.service.remote",
+            "jboss.xts.handlers",
+            "org.wildfly.clustering.cache.default-service-provider-registry.ejb",
+            "org.wildfly.clustering.cache.default-service-provider-registry.web",
+            "org.wildfly.clustering.cache.group.ejb.passivation",
+            "org.wildfly.clustering.cache.group.hibernate.entity",
+            "org.wildfly.clustering.cache.group.hibernate.local-query",
+            "org.wildfly.clustering.cache.group.hibernate.timestamps",
+            "org.wildfly.clustering.cache.group.server.client-mappings",
+            "org.wildfly.clustering.cache.group.server.default",
+            "org.wildfly.clustering.cache.group.web.client-mappings",
+            "org.wildfly.clustering.cache.group.web.default-server",
+            "org.wildfly.clustering.cache.group.web.passivation",
+            "org.wildfly.clustering.cache.registry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry.server.default",
+            "org.wildfly.clustering.cache.registry.web.passivation",
+            "org.wildfly.clustering.cache.registry-entry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-entry.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.server.default",
+            "org.wildfly.clustering.cache.registry-entry.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.web.default-server",
+            "org.wildfly.clustering.cache.registry-entry.web.passivation",
+            "org.wildfly.clustering.cache.registry-factory.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-factory.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.server.default",
+            "org.wildfly.clustering.cache.registry-factory.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.web.default-server",
+            "org.wildfly.clustering.cache.registry-factory.web.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.entity",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.local-query",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.service-provider-registry.server.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.server.default",
+            "org.wildfly.clustering.cache.service-provider-registry.web.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.web.default-server",
+            "org.wildfly.clustering.cache.service-provider-registry.web.passivation",
+            "org.wildfly.clustering.command-dispatcher-factory.ejb",
+            "org.wildfly.clustering.command-dispatcher-factory.hibernate",
+            "org.wildfly.clustering.command-dispatcher-factory.local",
+            "org.wildfly.clustering.command-dispatcher-factory.server",
+            "org.wildfly.clustering.command-dispatcher-factory.web",
+            "org.wildfly.clustering.default-command-dispatcher-factory",
+            "org.wildfly.clustering.group.hibernate",
+            "org.wildfly.clustering.group.server",
+            "org.wildfly.clustering.group.web",
+            "org.wildfly.clustering.infinispan.cache.ejb.passivation",
+            "org.wildfly.clustering.infinispan.cache.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.store.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.web.passivation",
+            "org.wildfly.clustering.infinispan.cache.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.web.default-server",
+            "org.wildfly.clustering.infinispan.cache.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.default-server",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.write",
+            "org.wildfly.clustering.infinispan.cache-container.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container.server",
+            "org.wildfly.clustering.infinispan.cache-container.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web.transport",
+            "org.wildfly.clustering.infinispan.default-cache.ejb",
+            "org.wildfly.clustering.infinispan.default-cache.web",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.server",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.web"
+        ]
+    }
+}
+2020-02-04 15:56:15,289 ERROR (External Management Request Threads -- 1) server:166 [handleResult] - WFLYSRV0021: Deploy of deployment "billing-engine-web-0.0.1.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.deployment.default-server.default-host.\"/billing-engine-web-0.0.1\"" => "java.lang.NullPointerException
+    Caused by: java.lang.NullPointerException"},
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.deployment.unit.\"billing-engine-web-0.0.1.war\".deploymentCompleteService"],
+        "Services that may be the cause:" => [
+            "jboss.clustering.web.route.default-server",
+            "jboss.iiop-openjdk.poa-service.rootpoa",
+            "jboss.txn.service.remote",
+            "jboss.xts.handlers",
+            "org.wildfly.clustering.cache.default-service-provider-registry.ejb",
+            "org.wildfly.clustering.cache.default-service-provider-registry.web",
+            "org.wildfly.clustering.cache.group.ejb.passivation",
+            "org.wildfly.clustering.cache.group.hibernate.entity",
+            "org.wildfly.clustering.cache.group.hibernate.local-query",
+            "org.wildfly.clustering.cache.group.hibernate.timestamps",
+            "org.wildfly.clustering.cache.group.server.client-mappings",
+            "org.wildfly.clustering.cache.group.server.default",
+            "org.wildfly.clustering.cache.group.web.client-mappings",
+            "org.wildfly.clustering.cache.group.web.default-server",
+            "org.wildfly.clustering.cache.group.web.passivation",
+            "org.wildfly.clustering.cache.registry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry.server.default",
+            "org.wildfly.clustering.cache.registry.web.passivation",
+            "org.wildfly.clustering.cache.registry-entry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-entry.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.server.default",
+            "org.wildfly.clustering.cache.registry-entry.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.web.default-server",
+            "org.wildfly.clustering.cache.registry-entry.web.passivation",
+            "org.wildfly.clustering.cache.registry-factory.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-factory.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.server.default",
+            "org.wildfly.clustering.cache.registry-factory.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.web.default-server",
+            "org.wildfly.clustering.cache.registry-factory.web.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.entity",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.local-query",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.service-provider-registry.server.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.server.default",
+            "org.wildfly.clustering.cache.service-provider-registry.web.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.web.default-server",
+            "org.wildfly.clustering.cache.service-provider-registry.web.passivation",
+            "org.wildfly.clustering.command-dispatcher-factory.ejb",
+            "org.wildfly.clustering.command-dispatcher-factory.hibernate",
+            "org.wildfly.clustering.command-dispatcher-factory.local",
+            "org.wildfly.clustering.command-dispatcher-factory.server",
+            "org.wildfly.clustering.command-dispatcher-factory.web",
+            "org.wildfly.clustering.default-command-dispatcher-factory",
+            "org.wildfly.clustering.group.hibernate",
+            "org.wildfly.clustering.group.server",
+            "org.wildfly.clustering.group.web",
+            "org.wildfly.clustering.infinispan.cache.ejb.passivation",
+            "org.wildfly.clustering.infinispan.cache.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.store.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.web.passivation",
+            "org.wildfly.clustering.infinispan.cache.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.web.default-server",
+            "org.wildfly.clustering.infinispan.cache.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.default-server",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.write",
+            "org.wildfly.clustering.infinispan.cache-container.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container.server",
+            "org.wildfly.clustering.infinispan.cache-container.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web.transport",
+            "org.wildfly.clustering.infinispan.default-cache.ejb",
+            "org.wildfly.clustering.infinispan.default-cache.web",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.server",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.web"
+        ]
+    }
+}
+2020-02-04 16:10:12,974 WARN  (JCA PoolFiller) OnePool:1173 [fillTo] - IJ000610: Unable to fill pool: java:/OracleDS
+javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1326)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.fillTo(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1138)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.PoolFiller.run(PoolFiller.java:97)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.UnsatisfiedLinkError: no ocijdbc12 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at oracle.jdbc.driver.T2CConnection$1.run(T2CConnection.java:4123)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.jdbc.driver.T2CConnection.loadNativeLibrary(T2CConnection.java:4119)
+	at oracle.jdbc.driver.T2CConnection.logon(T2CConnection.java:312)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+	at oracle.jdbc.driver.T2CDriverExtension.getConnection(T2CDriverExtension.java:54)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 6 more
+2020-02-04 16:17:10,591 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry plexus-utils-3.1.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,597 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-lang3-3.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,597 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry hazelcast-3.12.4.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,599 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry hazelcast-client-3.12.4.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,603 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry java-time-backport-1.0.0.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,604 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-antrun-plugin-1.8.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,614 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-plugin-api-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,623 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-project-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,645 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-settings-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,650 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-profile-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,653 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-model-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,664 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-artifact-manager-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,667 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-repository-metadata-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,668 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry wagon-provider-api-1.0-beta-6.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,670 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry backport-util-concurrent-3.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,676 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-plugin-registry-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,684 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry plexus-interpolation-1.11.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,684 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry plexus-container-default-1.0-alpha-9-stable-1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,686 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry classworlds-1.1-alpha-2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,687 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry maven-artifact-2.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,688 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry ant-1.8.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,701 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry ant-launcher-1.8.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,703 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-codec-1.6.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,704 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-dbutils-1.7.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,705 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-httpclient-3.0.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,715 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-io-2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,717 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-lang-2.6.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,719 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,722 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry joda-time-2.9.9.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,735 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,746 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry slf4j-log4j12-1.7.25.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,750 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry slf4j-api-1.7.25.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,789 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.25.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,800 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry slf4j-jdk14-1.7.25.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,804 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry slf4j-nop-1.7.25.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,806 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-beanutils-1.9.3.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,814 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-collections-3.2.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,820 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-dbcp2-2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,831 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-pool2-2.6.0.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,836 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry quartz-2.3.0.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,838 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry mchange-commons-java-0.2.11.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,839 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry HikariCP-java6-2.3.13.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,840 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry gson-2.8.5.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,843 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-webmvc-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,851 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-aop-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,851 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-beans-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,852 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-context-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,853 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-core-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,853 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-jcl-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,854 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-expression-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,855 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-web-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,856 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-orm-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,867 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-jdbc-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,868 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry spring-tx-5.0.0.RELEASE.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,870 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-spring-taglib-3.53.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,871 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry commons-base-3.53.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,872 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry hibernate-core-5.4.3.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,873 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry jboss-logging-3.3.2.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,885 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry javax.persistence-api-2.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,887 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry javassist-3.24.0-GA.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,888 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry byte-buddy-1.9.10.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,889 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry antlr-2.7.7.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,889 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry jboss-transaction-api_1.2_spec-1.1.1.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,896 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry jandex-2.0.5.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,897 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry classmate-1.3.4.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,897 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry javax.activation-api-1.2.0.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,898 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry dom4j-2.1.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,899 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry jaxb-api-2.3.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,899 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry jaxb-runtime-2.3.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,900 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry txw2-2.3.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,901 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry istack-commons-runtime-3.0.7.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,902 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry stax-ex-1.8.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,903 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry FastInfoset-1.2.15.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,904 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry hibernate-commons-annotations-5.1.0.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,913 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry hibernate-c3p0-5.4.3.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,916 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry c3p0-0.9.5.4.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,917 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry hibernate-validator-5.4.3.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,918 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry validation-api-1.1.0.Final.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,919 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry javax.servlet.jsp.jstl-api-1.2.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,922 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry standard-1.1.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,924 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry dbunit-2.5.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,929 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry poi-ooxml-3.11.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,935 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry poi-3.11.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,936 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry poi-ooxml-schemas-3.11.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,937 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry xmlbeans-2.6.0.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,939 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry stax-api-1.0.1.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,939 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry quartz-jobs-2.3.0.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,941 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry ojdbc7-12.1.0.2.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:10,951 WARN  (MSC service thread 1-1) deployment:195 [deploy] - WFLYSRV0059: Class Path entry mchange-commons-java-0.2.15.jar in /C:/wildfly-13.0.0.Final/bin/content/cms-outpatient-web.war/WEB-INF/lib/c3p0-0.9.5.4.jar  does not point to a valid jar for a Class-Path reference.
+2020-02-04 16:17:11,669 WARN  (MSC service thread 1-7) ee:98 [deploy] - WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2020-02-04 16:17:11,679 WARN  (MSC service thread 1-7) ee:98 [deploy] - WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+2020-02-04 16:17:11,682 WARN  (MSC service thread 1-7) ee:98 [deploy] - WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+2020-02-04 16:17:11,705 WARN  (MSC service thread 1-7) ee:98 [deploy] - WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2020-02-04 16:17:11,803 WARN  (MSC service thread 1-7) jdbc:90 [deploy] - WFLYJCA0003: Unable to instantiate driver class "oracle.jdbc.OracleDriver": org.jboss.msc.service.DuplicateServiceException: Service jboss.jdbc-driver.cms-outpatient-web_war_oracle_jdbc_OracleDriver_12_1 is already registered
+2020-02-04 16:17:11,810 WARN  (MSC service thread 1-7) deployer:118 [deploy] - WFLYWELD0013: Deployment cms-outpatient-web.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2020-02-04 16:17:16,249 ERROR (ServerService Thread Pool -- 243) ContextLoader:321 [initWebApplicationContext] - Context initialization failed
+java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:217)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:186)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:251)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2020-02-04 16:17:16,255 ERROR (ServerService Thread Pool -- 243) fail:1998 [failed] - MSC000001: Failed to start service jboss.undertow.deployment.default-server.default-host./cms-outpatient-web
+org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./cms-outpatient-web: java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:217)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:186)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1514)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:251)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	... 8 more
+2020-02-04 16:17:16,267 ERROR (External Management Request Threads -- 1) management-operation:1002 [executeStep] - WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "cms-outpatient-web.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.deployment.default-server.default-host./cms-outpatient-web" => "java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;
+    Caused by: java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;"},
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.deployment.unit.\"cms-outpatient-web.war\".deploymentCompleteService"],
+        "Services that may be the cause:" => [
+            "jboss.clustering.web.route.default-server",
+            "jboss.iiop-openjdk.poa-service.rootpoa",
+            "jboss.txn.service.remote",
+            "jboss.xts.handlers",
+            "org.wildfly.clustering.cache.default-service-provider-registry.ejb",
+            "org.wildfly.clustering.cache.default-service-provider-registry.web",
+            "org.wildfly.clustering.cache.group.ejb.passivation",
+            "org.wildfly.clustering.cache.group.hibernate.entity",
+            "org.wildfly.clustering.cache.group.hibernate.local-query",
+            "org.wildfly.clustering.cache.group.hibernate.timestamps",
+            "org.wildfly.clustering.cache.group.server.client-mappings",
+            "org.wildfly.clustering.cache.group.server.default",
+            "org.wildfly.clustering.cache.group.web.client-mappings",
+            "org.wildfly.clustering.cache.group.web.default-server",
+            "org.wildfly.clustering.cache.group.web.passivation",
+            "org.wildfly.clustering.cache.registry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry.server.default",
+            "org.wildfly.clustering.cache.registry.web.passivation",
+            "org.wildfly.clustering.cache.registry-entry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-entry.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.server.default",
+            "org.wildfly.clustering.cache.registry-entry.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.web.default-server",
+            "org.wildfly.clustering.cache.registry-entry.web.passivation",
+            "org.wildfly.clustering.cache.registry-factory.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-factory.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.server.default",
+            "org.wildfly.clustering.cache.registry-factory.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.web.default-server",
+            "org.wildfly.clustering.cache.registry-factory.web.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.entity",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.local-query",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.service-provider-registry.server.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.server.default",
+            "org.wildfly.clustering.cache.service-provider-registry.web.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.web.default-server",
+            "org.wildfly.clustering.cache.service-provider-registry.web.passivation",
+            "org.wildfly.clustering.command-dispatcher-factory.ejb",
+            "org.wildfly.clustering.command-dispatcher-factory.hibernate",
+            "org.wildfly.clustering.command-dispatcher-factory.local",
+            "org.wildfly.clustering.command-dispatcher-factory.server",
+            "org.wildfly.clustering.command-dispatcher-factory.web",
+            "org.wildfly.clustering.default-command-dispatcher-factory",
+            "org.wildfly.clustering.group.hibernate",
+            "org.wildfly.clustering.group.server",
+            "org.wildfly.clustering.group.web",
+            "org.wildfly.clustering.infinispan.cache.ejb.passivation",
+            "org.wildfly.clustering.infinispan.cache.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.store.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.web.passivation",
+            "org.wildfly.clustering.infinispan.cache.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.web.default-server",
+            "org.wildfly.clustering.infinispan.cache.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.default-server",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.write",
+            "org.wildfly.clustering.infinispan.cache-container.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container.server",
+            "org.wildfly.clustering.infinispan.cache-container.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web.transport",
+            "org.wildfly.clustering.infinispan.default-cache.ejb",
+            "org.wildfly.clustering.infinispan.default-cache.web",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.server",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.web"
+        ]
+    }
+}
+2020-02-04 16:17:16,280 ERROR (External Management Request Threads -- 1) server:166 [handleResult] - WFLYSRV0021: Deploy of deployment "cms-outpatient-web.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.deployment.default-server.default-host./cms-outpatient-web" => "java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;
+    Caused by: java.lang.NoSuchMethodError: org.springframework.web.context.ConfigurableWebApplicationContext.getEnvironment()Lorg/springframework/core/env/ConfigurableEnvironment;"},
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.deployment.unit.\"cms-outpatient-web.war\".deploymentCompleteService"],
+        "Services that may be the cause:" => [
+            "jboss.clustering.web.route.default-server",
+            "jboss.iiop-openjdk.poa-service.rootpoa",
+            "jboss.txn.service.remote",
+            "jboss.xts.handlers",
+            "org.wildfly.clustering.cache.default-service-provider-registry.ejb",
+            "org.wildfly.clustering.cache.default-service-provider-registry.web",
+            "org.wildfly.clustering.cache.group.ejb.passivation",
+            "org.wildfly.clustering.cache.group.hibernate.entity",
+            "org.wildfly.clustering.cache.group.hibernate.local-query",
+            "org.wildfly.clustering.cache.group.hibernate.timestamps",
+            "org.wildfly.clustering.cache.group.server.client-mappings",
+            "org.wildfly.clustering.cache.group.server.default",
+            "org.wildfly.clustering.cache.group.web.client-mappings",
+            "org.wildfly.clustering.cache.group.web.default-server",
+            "org.wildfly.clustering.cache.group.web.passivation",
+            "org.wildfly.clustering.cache.registry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry.server.default",
+            "org.wildfly.clustering.cache.registry.web.passivation",
+            "org.wildfly.clustering.cache.registry-entry.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-entry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-entry.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.server.default",
+            "org.wildfly.clustering.cache.registry-entry.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-entry.web.default-server",
+            "org.wildfly.clustering.cache.registry-entry.web.passivation",
+            "org.wildfly.clustering.cache.registry-factory.ejb.passivation",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.entity",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.local-query",
+            "org.wildfly.clustering.cache.registry-factory.hibernate.timestamps",
+            "org.wildfly.clustering.cache.registry-factory.server.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.server.default",
+            "org.wildfly.clustering.cache.registry-factory.web.client-mappings",
+            "org.wildfly.clustering.cache.registry-factory.web.default-server",
+            "org.wildfly.clustering.cache.registry-factory.web.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.ejb.passivation",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.entity",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.local-query",
+            "org.wildfly.clustering.cache.service-provider-registry.hibernate.timestamps",
+            "org.wildfly.clustering.cache.service-provider-registry.server.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.server.default",
+            "org.wildfly.clustering.cache.service-provider-registry.web.client-mappings",
+            "org.wildfly.clustering.cache.service-provider-registry.web.default-server",
+            "org.wildfly.clustering.cache.service-provider-registry.web.passivation",
+            "org.wildfly.clustering.command-dispatcher-factory.ejb",
+            "org.wildfly.clustering.command-dispatcher-factory.hibernate",
+            "org.wildfly.clustering.command-dispatcher-factory.local",
+            "org.wildfly.clustering.command-dispatcher-factory.server",
+            "org.wildfly.clustering.command-dispatcher-factory.web",
+            "org.wildfly.clustering.default-command-dispatcher-factory",
+            "org.wildfly.clustering.group.hibernate",
+            "org.wildfly.clustering.group.server",
+            "org.wildfly.clustering.group.web",
+            "org.wildfly.clustering.infinispan.cache.ejb.passivation",
+            "org.wildfly.clustering.infinispan.cache.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache.store.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache.store.server.default",
+            "org.wildfly.clustering.infinispan.cache.store.web.passivation",
+            "org.wildfly.clustering.infinispan.cache.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache.web.default-server",
+            "org.wildfly.clustering.infinispan.cache.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.entity.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.local-query.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.hibernate.timestamps.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.server.default.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.client-mappings",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.default-server",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.expiration",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.locking",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.memory",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.transaction",
+            "org.wildfly.clustering.infinispan.cache-configuration.web.passivation.write",
+            "org.wildfly.clustering.infinispan.cache-container.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container.server",
+            "org.wildfly.clustering.infinispan.cache-container.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.hibernate.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.server.transport",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web",
+            "org.wildfly.clustering.infinispan.cache-container-configuration.web.transport",
+            "org.wildfly.clustering.infinispan.default-cache.ejb",
+            "org.wildfly.clustering.infinispan.default-cache.web",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.server",
+            "org.wildfly.clustering.infinispan.default-cache-configuration.web"
+        ]
+    }
+}
