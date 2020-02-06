@@ -1,1 +1,19 @@
 @charset "UTF-8"; 
+
+body {
+	background-color: "#396da6#";
+}
+
+.db_table{
+
+}
+
+.generateMvcIframe{
+	height: 0px;
+	width: 0px;
+	border: none;
+	border-width: 0px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}

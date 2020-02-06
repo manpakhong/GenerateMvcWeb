@@ -18,9 +18,12 @@ BaccaratController controller = new BaccaratController();
 
 <link type="text/css" rel="stylesheet" href="${context}/css/common.css"/>
 <link type="text/css" rel="stylesheet" href="${context}/css/landingPage.css"/>
+<link type="text/css" rel="stylesheet" href="${context}/css/select2.min.css"/>
 
 <script type="text/javascript" src="<%=request.getContextPath()%>/javascript/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/javascript/common.js"></script>
+<script type="text/javascript" src="${context}/javascript/common_utils.js"></script>
+<script type="text/javascript" src="${context}/javascript/select2.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/javascript/landingPage.js"></script>
 
  
@@ -66,6 +69,20 @@ BaccaratController controller = new BaccaratController();
 	   <div style="margin:1px 1px 1px 1px;">
 	      <img src="<%=request.getContextPath()%>/image/logo.png" alt="The logo of Hong Kong Baptist Hospital">
 	   </div>
+	   <div>
+	   		<span>Type or click to select tables for code generation:</span><br/>
+	   		<select class="db_table" name="tables[]" multiple="multiple">
+	   			<c:if test="${not empty tableNameList}">
+	   				<c:forEach var="tableName" items="${tableNameList}">
+	   					<option value="${tableName}">${tableName}</option>
+	   				</c:forEach>
+	   			</c:if>
+	   		</select>
+	   </div>
+	   <div>
+	   		<input type="button" onclick="generate_code(event)" value="Submit" />
+	   </div>
 	</div>
+	 <iframe class="generateMvcIframe" src=""></iframe> 
 </body>
 </html>
