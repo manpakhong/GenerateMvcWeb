@@ -25,6 +25,7 @@ import com.rabbitforever.generateJavaMVC.services.OrmDaoGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.OrmServiceGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.ServiceGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.SoGenerateMgr;
+import com.rabbitforever.generateJavaMVC.utils.CalendarUtils;
 
 import hk.org.hkbh.cms.generatemvc.web.factories.UtilsFactory;
 import hk.org.hkbh.cms.generatemvc.web.services.CompressionMgr;
@@ -63,59 +64,76 @@ public class GenerateMvcServlet extends HttpServlet {
 		ByteArrayOutputStream baos = null;
 		String rootDir = null;
 		String fileName = null;
-		String fileNamePrefix = null;
+		String fileNamePrefix = "MvcFiles";
 		String fileNameSuffix = null;
 		try {
-			String tableName = request.getParameter("tableName");
+			String tableNameParamString = request.getParameter("tableName");
 
-
-
-			
-			
-
+			List <String> tableNameList = new ArrayList<String>();
+			if (tableNameParamString.contains("!")) {
+				String [] tableNameArray = tableNameParamString.split("!");
+				for (String tableName: tableNameArray) {
+					tableNameList.add(tableName);
+				}
+			} else {
+				tableNameList.add(tableNameParamString);
+			}
 			
 			List<CompressFileDto> compressFileDtoList = new ArrayList<CompressFileDto>();
-			CompressFileDto compressFileDto1 = new CompressFileDto();
-			CompressFileDto compressFileDto2 = new CompressFileDto();
-			CompressFileDto compressFileDto3 = new CompressFileDto();
-			CompressFileDto compressFileDto4 = new CompressFileDto();
-			CompressFileDto compressFileDto5 = new CompressFileDto();
-			CompressFileDto compressFileDto6 = new CompressFileDto();
 			
-			EoGenerateMgr voGeneratorMgr = new EoGenerateMgr(tableName);
-			voGeneratorMgr.generateEo(compressFileDto1);
-			
-			SoGenerateMgr soGeneratorMgr = new SoGenerateMgr(tableName);
-			soGeneratorMgr.generateSo(compressFileDto2);
-			
+			fileNameSuffix = "";
+			for (String tableName: tableNameList) {
 
-			DaoGenerateMgr daoGeneratorMgr = new DaoGenerateMgr(tableName);
-			daoGeneratorMgr.generateDao(compressFileDto3);
-//			
-			OrmDaoGenerateMgr ormDaoGeneratorMgr = new OrmDaoGenerateMgr(tableName);
-			ormDaoGeneratorMgr.generateDao(compressFileDto4);
+				
+				CompressFileDto compressFileDto1 = new CompressFileDto();
+				CompressFileDto compressFileDto2 = new CompressFileDto();
+				CompressFileDto compressFileDto3 = new CompressFileDto();
+				CompressFileDto compressFileDto4 = new CompressFileDto();
+				CompressFileDto compressFileDto5 = new CompressFileDto();
+				CompressFileDto compressFileDto6 = new CompressFileDto();
+				
+				EoGenerateMgr voGeneratorMgr = new EoGenerateMgr(tableName);
+				voGeneratorMgr.generateEo(compressFileDto1);
+				
+				SoGenerateMgr soGeneratorMgr = new SoGenerateMgr(tableName);
+				soGeneratorMgr.generateSo(compressFileDto2);
+				
+
+				DaoGenerateMgr daoGeneratorMgr = new DaoGenerateMgr(tableName);
+				daoGeneratorMgr.generateDao(compressFileDto3);
+//					
+				OrmDaoGenerateMgr ormDaoGeneratorMgr = new OrmDaoGenerateMgr(tableName);
+				ormDaoGeneratorMgr.generateDao(compressFileDto4);
+				
+//					IDaoGenerateMgr idaoGeneratorMgr = new IDaoGenerateMgr(temp[i]);
+//					idaoGeneratorMgr.generateDao();	
+//					
+//					
+				
+				
+				ServiceGenerateMgr svrGeneratorMgr = new ServiceGenerateMgr(tableName);
+				svrGeneratorMgr.generateService(compressFileDto5);
+				
+				OrmServiceGenerateMgr ormServiceGenerateMgr = new OrmServiceGenerateMgr(tableName);
+				ormServiceGenerateMgr.generateService(compressFileDto6);
+//					
+//					IServiceGenerateMgr isvrGeneratorMgr = new IServiceGenerateMgr(temp[i]);
+//					isvrGeneratorMgr.generateService();
+				
+				compressFileDtoList.add(compressFileDto1);
+				compressFileDtoList.add(compressFileDto2);
+				compressFileDtoList.add(compressFileDto3);
+				compressFileDtoList.add(compressFileDto4);
+				compressFileDtoList.add(compressFileDto5);
+				compressFileDtoList.add(compressFileDto6);
+			}
+				
+
+
+
 			
-//			IDaoGenerateMgr idaoGeneratorMgr = new IDaoGenerateMgr(temp[i]);
-//			idaoGeneratorMgr.generateDao();	
-//			
-//			
 			
 			
-			ServiceGenerateMgr svrGeneratorMgr = new ServiceGenerateMgr(tableName);
-			svrGeneratorMgr.generateService(compressFileDto5);
-			
-			OrmServiceGenerateMgr ormServiceGenerateMgr = new OrmServiceGenerateMgr(tableName);
-			ormServiceGenerateMgr.generateService(compressFileDto6);
-//			
-//			IServiceGenerateMgr isvrGeneratorMgr = new IServiceGenerateMgr(temp[i]);
-//			isvrGeneratorMgr.generateService();
-			
-			compressFileDtoList.add(compressFileDto1);
-			compressFileDtoList.add(compressFileDto2);
-			compressFileDtoList.add(compressFileDto3);
-			compressFileDtoList.add(compressFileDto4);
-			compressFileDtoList.add(compressFileDto5);
-			compressFileDtoList.add(compressFileDto6);
 
 			CompressionMgr mgr = new CompressionMgr();
 
@@ -136,7 +154,7 @@ public class GenerateMvcServlet extends HttpServlet {
 			
 			
 			response.setContentType("application/zip");
-
+			response.setHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\"");
 
 
 //			baos = new ByteArrayOutputStream();

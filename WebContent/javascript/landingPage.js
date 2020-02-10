@@ -31,7 +31,7 @@
 function init(){
 	$('.db_table').select2({
 		placeholder: 'Select tables',
-		width: '1024px'
+		width: '100%'
 	});
 }
 
@@ -44,9 +44,9 @@ function generate_code(e){
 			var table = tableList[i];
 
 			if (i > 0){
-				tableListString += '&';
+				tableListString += '!';
 			}
-			tableListString += 'tableName=' + table.id;
+			tableListString +=  table.id;
 
 		}
 	}
@@ -54,7 +54,7 @@ function generate_code(e){
 }
 
 function doRequestToServlet(tableListString){
-	var url = "GenerateMvcServlet?" + tableListString;
+	var url = "GenerateMvcServlet?" +'tableName=' + tableListString;
 
 	var iframe = $('.generateMvcIframe');
 	$(iframe).attr('src', url);
