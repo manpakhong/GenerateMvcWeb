@@ -2,7 +2,6 @@ package hk.org.hkbh.cms.generatemvc.web.servlets;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,8 +10,6 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.StreamingOutput;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,9 +20,9 @@ import com.rabbitforever.generateJavaMVC.services.DaoGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.EoGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.OrmDaoGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.OrmServiceGenerateMgr;
+import com.rabbitforever.generateJavaMVC.services.OrmServiceHelperGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.ServiceGenerateMgr;
 import com.rabbitforever.generateJavaMVC.services.SoGenerateMgr;
-import com.rabbitforever.generateJavaMVC.utils.CalendarUtils;
 
 import hk.org.hkbh.cms.generatemvc.web.factories.UtilsFactory;
 import hk.org.hkbh.cms.generatemvc.web.services.CompressionMgr;
@@ -91,6 +88,7 @@ public class GenerateMvcServlet extends HttpServlet {
 				CompressFileDto compressFileDto4 = new CompressFileDto();
 				CompressFileDto compressFileDto5 = new CompressFileDto();
 				CompressFileDto compressFileDto6 = new CompressFileDto();
+				CompressFileDto compressFileDto7 = new CompressFileDto();
 				
 				EoGenerateMgr voGeneratorMgr = new EoGenerateMgr(tableName);
 				voGeneratorMgr.generateEo(compressFileDto1);
@@ -116,6 +114,10 @@ public class GenerateMvcServlet extends HttpServlet {
 				
 				OrmServiceGenerateMgr ormServiceGenerateMgr = new OrmServiceGenerateMgr(tableName);
 				ormServiceGenerateMgr.generateService(compressFileDto6);
+				
+				OrmServiceHelperGenerateMgr ormServiceHelperGenerateMgr = new OrmServiceHelperGenerateMgr(tableName);
+				ormServiceHelperGenerateMgr.generateServiceHelper(compressFileDto7);
+				
 //					
 //					IServiceGenerateMgr isvrGeneratorMgr = new IServiceGenerateMgr(temp[i]);
 //					isvrGeneratorMgr.generateService();
@@ -126,6 +128,7 @@ public class GenerateMvcServlet extends HttpServlet {
 				compressFileDtoList.add(compressFileDto4);
 				compressFileDtoList.add(compressFileDto5);
 				compressFileDtoList.add(compressFileDto6);
+				compressFileDtoList.add(compressFileDto7);
 			}
 				
 
